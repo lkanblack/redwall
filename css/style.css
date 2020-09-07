@@ -1,0 +1,136 @@
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-style: normal;
+}
+
+p {
+  margin: 0;
+}
+
+.frame {
+  background-color: #fff;
+  width: 100%;
+  height: 100vh;
+  padding: 16px;
+}
+
+button {
+  border: none;
+}
+
+.active {
+  font-weight: bold;
+}
+
+.ringi_btn {
+  background-color: #EE1D4C;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  padding: 8px 24px;
+}
+
+.hero_bg {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.67)), to(rgba(0, 0, 0, 0))), url("../img/ringi-aripark1.jpg") no-repeat;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.67) 0%, rgba(0, 0, 0, 0) 100%), url("../img/ringi-aripark1.jpg") no-repeat;
+  background-size: cover;
+  border-bottom-right-radius: 83.5px;
+}
+
+.hero_bg .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.hero_bg .header img {
+  margin: 44px 0px 77px 47px;
+}
+
+.hero_bg .header .lang {
+  margin: 35px 47px 0px 0px;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.hero_bg .header .lang a {
+  color: #fff;
+  margin-left: 13px;
+}
+
+.hero_bg .main {
+  margin-top: 13%;
+  color: #fff;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 50px;
+}
+
+.hero_bg .main button {
+  margin-top: 5%;
+}
+
+.hero_bg .cookies {
+  position: absolute;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 8px;
+  padding: 8px 16px;
+  width: 290px;
+  background-color: #fff;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.hero_bg .cookies p {
+  width: 183px;
+}
+
+.hero_bg .cookies a {
+  text-decoration: underline;
+  color: #0C0C0C;
+}
+
+.hero_bg .cookies button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 70px;
+  height: 28px;
+  height: 20px;
+  border: 2px solid #0C0C0C;
+  background-color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.hero_bg .down {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin: 5px;
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */
