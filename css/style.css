@@ -7,6 +7,15 @@ p {
   margin: 0;
 }
 
+h2 {
+  margin: 0;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: -0.01em;
+  padding: 16px 0px 40px 0px;
+}
+
 .frame {
   background-color: #fff;
   width: 100%;
@@ -29,6 +38,16 @@ button {
   line-height: 24px;
   color: #fff;
   padding: 8px 24px;
+  height: 40px;
+}
+
+.cloud_btn {
+  margin-top: 16px;
+  width: 169px;
+}
+
+.cloud_btn img {
+  margin-right: 4px;
 }
 
 .hero_bg {
@@ -71,6 +90,24 @@ button {
   font-weight: bold;
   font-size: 40px;
   line-height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero_bg .main h1 {
+  width: 80%;
+}
+
+.hero_bg .main span {
+  font-style: italic;
 }
 
 .hero_bg .main button {
@@ -132,5 +169,100 @@ button {
   bottom: 0;
   margin: 5px;
   cursor: pointer;
+}
+
+.detail_bg {
+  width: 100%;
+  height: 100%;
+  background: url(../img/ringi-aripark3.jpg) no-repeat;
+  background-size: cover;
+}
+
+.detail_bg-block {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  padding: 64px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  opacity: 0.85;
+}
+
+.detail_bg-block hr {
+  margin: 0;
+  width: 100%;
+  border: 0.5px solid #0C0C0C;
+}
+
+.detail_bg-block .hr-4 {
+  border: 2px solid #0C0C0C;
+}
+
+.detail_bg-block .hr-2 {
+  border: 1px solid #0C0C0C;
+}
+
+.detail_bg-block ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.detail_bg-block ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.detail_bg-block ul li p {
+  margin: 4px 0px;
+}
+
+.detail_bg-block ul .option {
+  min-width: 142px;
+}
+
+.contact_bg {
+  height: 100%;
+  background: url(../img/contact_svg.svg) no-repeat center;
+  background-size: cover;
+}
+
+.contact_bg-block {
+  height: 100%;
+  width: 100%;
+  background-color: #0C0C0C;
+  opacity: 0.85;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 64px;
+}
+
+.contact_bg-block hr {
+  border: 2px solid #fff;
+  width: 100%;
+}
+
+.contact_bg-block h2 {
+  color: #fff;
 }
 /*# sourceMappingURL=style.css.map */
