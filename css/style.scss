@@ -51,6 +51,8 @@ button {
         
     }
 }
+
+
 .hero {
     &_bg {
         position: relative;
@@ -235,9 +237,11 @@ button {
                     height: 48px;
                     margin-bottom: 12px;
                     padding-left: 8px;
+                    padding-top: 11px;
                     box-sizing: border-box;
                     &::placeholder {
                         color: $white;
+                        opacity: 1;
                         font-size: 16px;
                         line-height: 24px;
                     }
@@ -255,6 +259,102 @@ button {
                     text-decoration: underline;
                 }
             }
+            button {
+                margin-top: 5px;
+            }
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .g-recaptcha {
+        transform:scale(0.77);
+        -webkit-transform:scal(0.77);
+        transform-origin:0 0;
+        -webkit-transform-origin:0 0;
+        } 
+    h2 {
+        font-size: 28px;
+        line-height: 36px;
+        padding: 8px 0px 24px 0px;
+    }
+
+    .hero {
+        &_bg {
+            border-bottom-right-radius: 0px;
+            position: relative;
+            .down {
+                display: none;
+            }
+            .header {
+                margin-bottom: 200px;
+                img {
+                    width: 173px;
+                    margin: 24px 0px 0px 32px;
+                }
+                .lang {
+                    display: flex;
+                    margin: 26px 24px 0px 0px;
+                    align-items: center;
+                }
+            }
+            .main {
+                h1 {
+                    font-size: 34px;
+                    line-height: 42px;
+                }
+            }
+            button.ringi_btn {
+                position: absolute;
+                width: 100%;
+                bottom: 0;
+                left: 0;
+
+            }
+            .ringi_btn {
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+    }
+    .detail {
+
+        &_bg {
+            &-mob {
+                img {
+                    display: none;
+                }
+            }
+            &-block {
+                padding: 32px;
+                background-color: $white;
+
+
+                button {
+                    margin: 16px auto;
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .contact {
+        &_bg {
+
+            &-block {
+                padding: 32px;
+            }
+        }
+        .logo {
+            display: none;
+        }
+    }
+    .cookies {
+        padding: 0;
+        position: relative;
+        button {
+            left: 0;
         }
     }
 }

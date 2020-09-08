@@ -300,30 +300,35 @@ button {
   height: 48px;
   margin-bottom: 12px;
   padding-left: 8px;
+  padding-top: 11px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
 .contact_bg-block form input::-webkit-input-placeholder, .contact_bg-block form textarea::-webkit-input-placeholder {
   color: #fff;
+  opacity: 1;
   font-size: 16px;
   line-height: 24px;
 }
 
 .contact_bg-block form input:-ms-input-placeholder, .contact_bg-block form textarea:-ms-input-placeholder {
   color: #fff;
+  opacity: 1;
   font-size: 16px;
   line-height: 24px;
 }
 
 .contact_bg-block form input::-ms-input-placeholder, .contact_bg-block form textarea::-ms-input-placeholder {
   color: #fff;
+  opacity: 1;
   font-size: 16px;
   line-height: 24px;
 }
 
 .contact_bg-block form input::placeholder, .contact_bg-block form textarea::placeholder {
   color: #fff;
+  opacity: 1;
   font-size: 16px;
   line-height: 24px;
 }
@@ -341,5 +346,84 @@ button {
 .contact_bg-block .private a {
   color: #fff;
   text-decoration: underline;
+}
+
+.contact_bg-block button {
+  margin-top: 5px;
+}
+
+@media screen and (max-width: 600px) {
+  .g-recaptcha {
+    transform: scale(0.77);
+    -webkit-transform: scal(0.77);
+    transform-origin: 0 0;
+    -webkit-transform-origin: 0 0;
+  }
+  h2 {
+    font-size: 28px;
+    line-height: 36px;
+    padding: 8px 0px 24px 0px;
+  }
+  .hero_bg {
+    border-bottom-right-radius: 0px;
+    position: relative;
+  }
+  .hero_bg .down {
+    display: none;
+  }
+  .hero_bg .header {
+    margin-bottom: 200px;
+  }
+  .hero_bg .header img {
+    width: 173px;
+    margin: 24px 0px 0px 32px;
+  }
+  .hero_bg .header .lang {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 26px 24px 0px 0px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .hero_bg .main h1 {
+    font-size: 34px;
+    line-height: 42px;
+  }
+  .hero_bg button.ringi_btn {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+  }
+  .hero_bg .ringi_btn {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .detail_bg-mob img {
+    display: none;
+  }
+  .detail_bg-block {
+    padding: 32px;
+    background-color: #fff;
+  }
+  .detail_bg-block button {
+    margin: 16px auto;
+    width: 100%;
+  }
+  .contact_bg-block {
+    padding: 32px;
+  }
+  .contact .logo {
+    display: none;
+  }
+  .cookies {
+    padding: 0;
+    position: relative;
+  }
+  .cookies button {
+    left: 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */
