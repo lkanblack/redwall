@@ -19,7 +19,8 @@ h2 {
 .frame {
   background-color: #fff;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
+  max-height: 100%;
   padding: 16px;
 }
 
@@ -53,7 +54,8 @@ button {
 .hero_bg {
   position: relative;
   width: 100%;
-  height: 100%;
+  min-height: 100%;
+  max-height: auto;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.67)), to(rgba(0, 0, 0, 0))), url("../img/ringi-aripark1.jpg") no-repeat;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.67) 0%, rgba(0, 0, 0, 0) 100%), url("../img/ringi-aripark1.jpg") no-repeat;
   background-size: cover;
@@ -173,15 +175,14 @@ button {
 
 .detail_bg {
   width: 100%;
-  height: 100%;
+  min-height: 100%;
   background: url(../img/ringi-aripark3.jpg) no-repeat;
   background-size: cover;
 }
 
 .detail_bg-block {
   width: 100%;
-  height: 100%;
-  background-color: #fff;
+  min-height: 100%;
   padding: 64px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -193,7 +194,7 @@ button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  opacity: 0.85;
+  background-color: rgba(255, 255, 255, 0.85);
 }
 
 .detail_bg-block hr {
@@ -234,16 +235,25 @@ button {
 }
 
 .contact_bg {
-  height: 100%;
+  position: relative;
+  min-height: 100%;
+  max-height: auto;
   background: url(../img/contact_svg.svg) no-repeat center;
   background-size: cover;
+  color: #fff;
+}
+
+.contact_bg .logo {
+  position: absolute;
+  margin: 0px 0px 48px 47px;
+  bottom: 0;
 }
 
 .contact_bg-block {
-  height: 100%;
+  min-height: 100%;
+  max-height: auto;
   width: 100%;
-  background-color: #0C0C0C;
-  opacity: 0.85;
+  background-color: rgba(12, 12, 12, 0.85);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -264,5 +274,67 @@ button {
 
 .contact_bg-block h2 {
   color: #fff;
+}
+
+.contact_bg-block .info {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 40px;
+}
+
+.contact_bg-block .info a {
+  color: #fff;
+}
+
+.contact_bg-block form input, .contact_bg-block form textarea {
+  width: 100%;
+  border: 1px solid #fff;
+  background: none;
+  height: 48px;
+  margin-bottom: 12px;
+  padding-left: 8px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.contact_bg-block form input::-webkit-input-placeholder, .contact_bg-block form textarea::-webkit-input-placeholder {
+  color: #fff;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.contact_bg-block form input:-ms-input-placeholder, .contact_bg-block form textarea:-ms-input-placeholder {
+  color: #fff;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.contact_bg-block form input::-ms-input-placeholder, .contact_bg-block form textarea::-ms-input-placeholder {
+  color: #fff;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.contact_bg-block form input::placeholder, .contact_bg-block form textarea::placeholder {
+  color: #fff;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.contact_bg-block form textarea {
+  height: 108px;
+}
+
+.contact_bg-block .private {
+  font-size: 12px;
+  line-height: 18px;
+  margin-bottom: 5px;
+}
+
+.contact_bg-block .private a {
+  color: #fff;
+  text-decoration: underline;
 }
 /*# sourceMappingURL=style.css.map */
